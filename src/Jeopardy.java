@@ -127,10 +127,19 @@ public class Jeopardy implements ActionListener {
 			askQuestion("There are about 40,000 muscles & tendons in this part of an elephant's body", "trunk", 400);
 		}
 			// Call the askQuestion() method with a harder question
-
+		if (buttonPressed.equals(thirdButton)) {
+			askQuestion("When husbands \"pop\" for an ermine coat, they're actually buying this fur", "a weasel", 600);
+		}
+		if (buttonPressed.equals(fourthButton)) {
+			askQuestion("Close relative of the pig, though its name means \"river horse\"", "hippopptamus", 800);
+		}
+		if (buttonPressed.equals(lastButton)) {
+			askQuestion("If this species of hybrid's parents were reversed, you'd get a hinny", "mule", 1000);
+		}
 		// Clear the text on the button that was pressed (set the button text to nothing)
 		buttonPressed.setText(null);
 	}
+
 
 	private void askQuestion(String question, String correctAnswer, int prizeMoney) {
 		
