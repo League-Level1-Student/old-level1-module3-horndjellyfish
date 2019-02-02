@@ -2,9 +2,18 @@
 /ChuckleClicker.class
 /CowTimer.class
 /FortuneTeller.class
+/Jeopardy.class
+/Movie.class
+/NastySurprise.class
+/NetflixQueue.class
+/PigLatinTranslator.class
 /Recipes.html
+/SimonSays.class
+/TypingTutor.class
+/brightlightillusion.jpg
 /creepy-noise.wav
 /down.jpg
+/elephantillusion.jpg
 /extra/
 /fortune teller.png
 /gridworld.jar
@@ -13,12 +22,4 @@
 /moo.wav
 /right.jpg
 /up.jpg
-/Jeopardy.class
-/Movie.class
-/NastySurprise.class
-/NetflixQueue.class
-/SimonSays.class
-/TypingTutor.class
-/PigLatinTranslator.class
-/brightlightillusion.jpg
-/elephantillusion.jpg
+/Calculator.class
