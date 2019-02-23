@@ -33,7 +33,7 @@ public class ChuckleClicker implements ActionListener {
 
 	public void actionPerformed(ActionEvent e) {
 		if(e.getSource() == joke) {
-			JOptionPane.showMessageDialog(null, "What does a nosey pepper do?");
+			JOptionPane.showMessageDialog(null, "What does a nosy pepper do?");
 		}
 		if(e.getSource() == punchline) {
 			JOptionPane.showMessageDialog(null, "Get jalapeño business.");

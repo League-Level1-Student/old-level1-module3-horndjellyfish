@@ -1,6 +1,29 @@
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
 
 public class PigLatinTranslator {
-
+	JFrame frame = new JFrame();
+	JPanel panel = new JPanel();
+	JButton button = new JButton();
+	JTextField input = new JTextField(8);
+	JTextField output = new JTextField(8);
+	public static void main (String [] args) {
+		PigLatinTranslator plt = new PigLatinTranslator();
+		plt.makeUI();
+	}
+	void makeUI() {
+		frame.setVisible(true);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		panel.add(input);
+		button.setText("translate");
+		panel.add(button);
+		panel.add(output);
+		frame.add(panel);
+		frame.pack();
+		
+	}
      /**
      * Method to test whether a character is a letter or not.
      * @param c The character to test

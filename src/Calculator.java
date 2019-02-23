@@ -14,6 +14,8 @@ public class Calculator implements ActionListener {
 	JPanel panel = new JPanel();
 	JButton addButton = new JButton();
 	JButton subButton = new JButton();
+	JButton mulButton = new JButton();
+	JButton divButton = new JButton();
 	JTextField answer1 = new JTextField(8);
 	JTextField answer2 = new JTextField(8);
 
@@ -36,6 +38,12 @@ public class Calculator implements ActionListener {
 		subButton.setText("Subtract");
 		subButton.addActionListener(this);
 		panel.add(subButton);
+		mulButton.setText("Multiply");
+		mulButton.addActionListener(this);
+		panel.add(mulButton);
+		divButton.setText("Divide");
+		divButton.addActionListener(this);
+		panel.add(divButton);
 		frame.add(panel);
 		frame.pack();
 	}
@@ -59,7 +67,24 @@ public class Calculator implements ActionListener {
 			int c = ai - bi;
 			JOptionPane.showMessageDialog(null, c);
 		}
+		
+		if (buttonPressed.equals(mulButton)) {
+			String a = answer1.getText();
+			String b = answer2.getText();
+			int ai = Integer.parseInt(a);
+			int bi = Integer.parseInt(b);
+			int c = ai * bi;
+			JOptionPane.showMessageDialog(null, c);
+		}
 
+		if (buttonPressed.equals(divButton)) {
+			String a = answer1.getText();
+			String b = answer2.getText();
+			int ai = Integer.parseInt(a);
+			int bi = Integer.parseInt(b);
+			int c = ai/bi;
+			JOptionPane.showMessageDialog(null, c);
+		}
 	}
 
 	public void add(String input) {
