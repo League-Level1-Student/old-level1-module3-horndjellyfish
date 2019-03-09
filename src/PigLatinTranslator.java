@@ -1,14 +1,17 @@
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-public class PigLatinTranslator {
+public class PigLatinTranslator implements ActionListener {
 	JFrame frame = new JFrame();
 	JPanel panel = new JPanel();
 	JButton button = new JButton();
-	JTextField input = new JTextField(8);
-	JTextField output = new JTextField(8);
+	JTextField input = new JTextField(25);
+	JTextField output = new JTextField(25);
 	public static void main (String [] args) {
 		PigLatinTranslator plt = new PigLatinTranslator();
 		plt.makeUI();
@@ -18,6 +21,7 @@ public class PigLatinTranslator {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		panel.add(input);
 		button.setText("translate");
+		button.addActionListener(this);
 		panel.add(button);
 		panel.add(output);
 		frame.add(panel);
@@ -88,4 +92,11 @@ public class PigLatinTranslator {
                     return i;
                return 0;
      }
+
+	public void actionPerformed(ActionEvent e) {
+		String i = input.getText();
+		String o = translate(i);
+		System.out.println(o);
+		output.setText(o);
+	}
 }
