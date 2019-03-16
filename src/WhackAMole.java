@@ -23,6 +23,7 @@ public class WhackAMole implements ActionListener {
 
 	void makeUI() {
 		frame.setVisible(true);
+		frame.setTitle("Whack-a-Mole");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setSize(300, 300);
 		drawButtons(value);
